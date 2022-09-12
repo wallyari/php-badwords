@@ -24,21 +24,20 @@
     We can be us, just for one day';
     
     //sostituire parola con ***
-    $badwordText =str_replace($badword, "***", $testo);
+    $badwordText =str_ireplace($badword, "***", $testo);
     
     //trim & strtolower
     ?>
 <section>
 
-
-<!-- paragrafo -->
-<h1><?php echo $testo;?></h1>
+<!-- paragrafo-->
+<p><?php echo $testo;?></p>
 
 <!-- paragrafo con badwords -->
-<h2><?php echo $badwordText;?></h2>
+<p><i><?php echo $badwordText;?></i></p>
 
 <!-- lunghezza paragrafo -->
-<p>Il paragrafo contiene <?php echo strlen($testo) ?> caratteri</p>
+<h2>Il paragrafo contiene <?php echo strlen($testo) ?> caratteri</h2>
 
 
 </section>
